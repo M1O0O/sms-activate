@@ -39,8 +39,14 @@ module.exports = class {
     /**
      * @returns {Promise <{ACCESS_BALANCE: number}>}
      */
-    async balance() {
+    async getBalance() {
         const response = await this.CreateRequest('get', 'getBalance');
         return yaml.load(this.parseYAMLtoJSON(response));
+    }
+    /**
+     * @returns {Object}
+     */
+    async getCountries() {
+        return await this.CreateRequest('get', 'getCountries');
     }
 };
