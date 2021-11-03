@@ -68,4 +68,16 @@ module.exports = class {
 
         return yaml.load(this.parseYAMLtoJSON(response));
     }
+
+    /**
+     * @param {Number} id 
+     * @returns {Promise <String>}
+     */
+    async getStatus(id) {
+        const response = await this.CreateRequest('get', 'getStatus', {
+            id: id
+        });
+
+        return yaml.load(response);
+    }
 };
