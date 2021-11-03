@@ -1,6 +1,6 @@
 {
     "name": "sms-activate.ru",
-    "version": "0.0.6",
+    "version": "0.0.7",
     "description": "Package for sms-activate.ru",
     "main": "index.js",
     "repository": {
