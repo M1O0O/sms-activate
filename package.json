@@ -1,0 +1,8 @@
+{
+  "name": "@m10o0/sms-activate",
+  "version": "0.0.1",
+  "description": "Package for sms-activate.ru",
+  "main": "src/app.js",
+  "author": "M1000.fr#0008",
+  "license": "ISC"
+}
