@@ -43,10 +43,29 @@ module.exports = class {
         const response = await this.CreateRequest('get', 'getBalance');
         return yaml.load(this.parseYAMLtoJSON(response));
     }
+
     /**
-     * @returns {Object}
+     * @returns {Promise <Object>}
      */
     async getCountries() {
         return await this.CreateRequest('get', 'getCountries');
+    }
+
+    /**
+     * @param {string} service
+     * @param {Array} operator
+     * @param {Number} country
+     * @param {String} ref
+     * @returns {Promise <{ACCESS_NUMBER: string}>}
+     */
+    async orderNumber(service, operator, country, ref) {
+        const response = await this.CreateRequest('get', 'getNumber', {
+            service: service,
+            operator: operator.join(','),
+            country: country,
+            ref: ref
+        });
+
+        return yaml.load(this.parseYAMLtoJSON(response));
     }
 };
