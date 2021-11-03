@@ -2,6 +2,9 @@ const axios = require('axios').default,
     yaml = require('js-yaml');
 
 module.exports = class {
+    /**
+     * @param {String} key 
+     */
     constructor(key) {
         if (typeof key !== 'string') throw new Error('API key must be a string');
 
