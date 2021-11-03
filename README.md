@@ -1,4 +1,4 @@
-# Package for sms-activate.ru using API
+# Package for [sms-activate.ru](https://sms-activate.ru/) using API
 
 
 ### Get balance of the account :
