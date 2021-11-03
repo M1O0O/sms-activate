@@ -1,4 +1,4 @@
-const account = require('../class/account');
+const account = require('../class/api');
 
 (async function () {
     const me = new account("My_Api_Key");
