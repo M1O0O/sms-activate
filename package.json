@@ -1,6 +1,6 @@
 {
     "name": "sms-activate.ru",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "description": "Package for sms-activate.ru",
     "main": "index.js",
     "repository": {
@@ -14,7 +14,7 @@
     },
     "homepage": "https://github.com/M1O0O/sms-activate#readme",
     "dependencies": {
-        "js-yaml": "^4.1.0",
-        "request": "^2.88.2"
+        "axios": "^0.24.0",
+        "js-yaml": "^4.1.0"
     }
 }
