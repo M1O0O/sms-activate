@@ -3,6 +3,18 @@
   "version": "0.0.1",
   "description": "Package for sms-activate.ru",
   "main": "src/app.js",
-  "author": "M1000.fr#0008",
-  "license": "ISC"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/M1O0O/sms-activate.git"
+  },
+  "author": "M1000.fr",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/M1O0O/sms-activate/issues"
+  },
+  "homepage": "https://github.com/M1O0O/sms-activate#readme",
+  "dependencies": {
+    "js-yaml": "^4.1.0",
+    "request": "^2.88.2"
+  }
 }
