@@ -2,7 +2,7 @@
   "name": "@m10o0/sms-activate",
   "version": "0.0.1",
   "description": "Package for sms-activate.ru",
-  "main": "src/app.js",
+  "main": "index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/M1O0O/sms-activate.git"
