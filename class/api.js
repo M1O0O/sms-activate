@@ -50,7 +50,7 @@ module.exports = class {
     /**
      * @returns {Promise <Object>}
      */
-    async getCountries() {
+    async getAllCountries() {
         return await this.CreateRequest('get', 'getCountries');
     }
 
