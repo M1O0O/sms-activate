@@ -35,6 +35,10 @@ module.exports = class {
         })
     }
 
+    /**
+     * @param {String} text 
+     * @returns {JSON}
+     */
     parseYAMLtoJSON(text) {
         return text.replace(/:/gm, ': ');
     }
