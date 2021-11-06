@@ -1,4 +1,4 @@
-const api = require('../class/api');
+const api = require('sms-activate.ru');
 
 (async function () {
     const me = new api("My_Api_Key");
