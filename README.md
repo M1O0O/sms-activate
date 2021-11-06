@@ -61,9 +61,10 @@ console.log(status);
 - Request the number of available phones :
 ```js
 /**
- * @param {Number} id 
- * @returns {Promise <String>}
+ * @param {Array} operator
+ * @param {Number} country
+ * @returns {Promise <Object>}
  */
-const status = await me.getAvailablePhones(id);
-console.log(status);
+const listAvailable = await me.getAvailablePhones(operator, country);
+console.log(listAvailable);
 ```
