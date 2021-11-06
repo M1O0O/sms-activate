@@ -57,3 +57,13 @@ console.log(phone);
 const status = await me.getStatus(id);
 console.log(status);
 ```
+
+- Request the number of available phones :
+```js
+/**
+ * @param {Number} id 
+ * @returns {Promise <String>}
+ */
+const status = await me.getAvailablePhones(id);
+console.log(status);
+```
