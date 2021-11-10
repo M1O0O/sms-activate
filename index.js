@@ -89,6 +89,20 @@ module.exports = class {
     }
 
     /**
+     * @param {Number} id 
+     * @param {String} status
+     * @returns {Promise <String>}
+     */
+    async setStatus(id, status) {
+        const response = await this.CreateRequest('get', 'setStatus', {
+            id: id,
+            status: status
+        });
+
+        return yaml.load(response);
+    }
+
+    /**
      * @param {Array} operator
      * @param {Number} country
      * @returns {Promise <Object>}
