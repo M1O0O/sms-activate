@@ -58,6 +58,17 @@ const status = await me.getStatus(id);
 console.log(status);
 ```
 
+- Set status of number :
+```js
+/**
+ * @param {Number} id 
+ * @param {String} status 
+ * @returns {Promise <String>}
+ */
+const res = await me.setStatus(id, status);
+console.log(res);
+```
+
 - Request the number of available phones :
 ```js
 /**
