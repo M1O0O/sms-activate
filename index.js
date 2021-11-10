@@ -68,7 +68,7 @@ module.exports = class {
     async orderNumber(service, operator, country, ref) {
         const response = await this.CreateRequest('get', 'getNumber', {
             service: service,
-            operator: operator.join(','),
+            operator: operator?.join(','),
             country: country,
             ref: ref
         });
